@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN DASHBOARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <span class="menu"></span>
+                    </a>
+                </div>
+                <div class="brand">
+                    <h3>A C M E</h3>
+                </div>
+                <div class="box">
+                    <span class="search"></span>
+                    <input type="search" placeholder="Search transaction ,Invoicse or help">
+                    <span class="bell"></span>
+                    <p class="text">John Doe</p>
+                    <span class="down"></span>
+                </div>
+                <div class="profile">
+                    <img src="images/profile-pic-01.jpg">
+                </div>
+            </div>
+            <main>
+                <div class="over">
+                    <h2 class="dash-title">Overview</h2>
+                    <button class="btn">
+                        <p>Add Funds</p><span class="plus"></span>
+                    </button>
+                </div>
+
+
+                <!--CREATE CHART AND GRAPH -->
+
+
+                <div class="chart">
+                    <div class="stl-chart">
+                        <p>Statistics<span class="remind">Last 6 months</span><span class="down1"></span></p>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="donut-chart">
+                        <p>Sales Distributions</p>
+                        <canvas id="donut-Chart" style="width:300px;height:200px;"></canvas>
+                    </div>
+                </div>
+
+
+                <!--CREATE TABLE-->
+
+                <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
+                            <h3>Referrer</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Views</th>
+                                        <th>Sales</th>
+                                        <th>Conversion</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>google.com</td>
+                                        <td>3746</td>
+                                        <td>752</td>
+                                        <td>43%</td>
+                                        <td>$19,291</td>
+                                    </tr>
+                                    <tr>
+                                        <td>facebook.com</td>
+                                        <td>3746</td>
+                                        <td>728</td>
+                                        <td>32%</td>
+                                        <td>$17,638</td>
+                                    </tr>
+                                    <tr>
+                                        <td>twitter.com</td>
+                                        <td>8836</td>
+                                        <td>694</td>
+                                        <td>28%</td>
+                                        <td>$16,218</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direct,Email,IM</td>
+                                        <td>1137</td>
+                                        <td>645</td>
+                                        <td>24%</td>
+                                        <td>$14,421</td>
+                                    </tr>
+                                    <tr>
+                                        <td>linkedIn.com</td>
+                                        <td>2739</td>
+                                        <td>539</td>
+                                        <td>20%</td>
+                                        <td>$12,370</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Instagram.com</td>
+                                        <td>2739</td>
+                                        <td>539</td>
+                                        <td>20%</td>
+                                        <td>$12,370</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="button">
+                                <a href="#">Show More</a>
+                            </div>
+                        </div>
+
+                        <!--WEBSITE SUMMARY CREATE-->
+
+                        <div class="summary">
+                            <div class="summary-card">
+                                <img class="profile-img" src="images/profile-pic-01.jpg">
+                                <p>Nick Herasimenka</p>
+                                <p class="city">United States</p>
+                                <div class="social">
+
+                                    <div class="twitter"></div>
+                                    <div class="fb"></div>
+                                    <div class="linkedIn"></div>
+                                    <div class="wp"></div>
+                                </div>
+                                <div class="ourusers">
+                                    <p>Our Users</p>
+                                </div>
+                                <span class="dot"></span>
+                                <div class="summary-single">
+                                    <span><img src="images/profile-pic-02.jpg"></span>
+                                    <div>
+                                        <h5>Drew James</h5>
+                                        <span class="num"><small>United States</small>
+                                            <p class="contact">Mobile:8715674877</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="summary-single">
+                                    <span><img src="images/profile-pic-03.jpg"></span>
+                                    <div>
+                                        <h5>Bavid Kames</h5>
+                                        <span class="num"><small>United States</small>
+                                            <p class="contact">Mobile:8715674877</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="summary-single">
+                                    <span><img src="images/profile-pic-04.jpg"></span>
+                                    <div>
+                                        <h5>Lavid Emes</h5>
+                                        <span class="num"><small>United States</small>
+                                            <p class="contact">Mobile:8715674877</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--UPLOAD VIDEO-->
+
+                            <div class="titl">
+                                <p>Product Video </p>
+                                <span class="dot1"></span>
+                            </div>
+
+                            <div class="bday-card">
+                                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Oy6hk6Y7VHQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+
+            <!--SIDEBAR CONTENT CREATE-->
+
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><span class="home"></span><!--<i class="fas fa-home"></i>--></span>
+                            <span class="item">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><span class="dash"></span><!--<i class="fas fa-desktop"></i>--></span>
+                            <span class="item">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><span
+                                    class="inbox"></span><!--<i class="fas fa-user-friends"></i>--></span>
+                            <span class="item">Inbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><span
+                                    class="products"></span><!--<i class="fas fa-tachometer-alt"></i>--></span>
+                            <span class="item">Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><span class="admin"></span><!--<i class="fas fa-database"></i>--></span>
+                            <span class="item">Admin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <script src="Admin Dashboard.js"></script>
+</body>
+
+</html>
